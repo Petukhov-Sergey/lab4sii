@@ -1,0 +1,17 @@
+{
+    "name": "serega_pirate/lab4",
+    "autoload": {
+        "psr-4": {
+            "SeregaPirate\\Lab4\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sergey Petukhov",
+            "email": "goginsan9499@mail.ru"
+        }
+    ],
+    "require": {
+        "ext-simplexml": "*"
+    }
+}
