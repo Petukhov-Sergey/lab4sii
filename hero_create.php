@@ -1,11 +1,11 @@
 <?php
 session_start();
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $xml = simplexml_load_file($_SESSION['xmlFileName']);
-    print_r($_POST);
+    $xml = simplexml_load_file("output.owx");
+    //print_r($_SESSION);
     createHeroData($xml);
-
-    header("Location: /updater.php");
+    print_r($xml);
+    //header("Location: /updater.php");
     exit;
 }
 
@@ -26,7 +26,7 @@ function createHeroData($xml) {
         $newHero->addChild('Literal');
         $newHero->Literal = (string)$value;
     }
-    $xml->asXML($_SESSION['xmlFileName']);
+    $xml->asXML("output.owx");
     //echo '<pre>' . htmlspecialchars(file_get_contents($_SESSION['xmlFileName'])) . '</pre>';
 }
 ?>

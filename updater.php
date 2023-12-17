@@ -22,7 +22,7 @@
                     $_SESSION['xmlFileName'] = "output.owx";
                     }
                     else{
-                        $xml = simplexml_load_file($_SESSION['xmlFileName']);
+                        $xml = simplexml_load_file('output.owx');
                     }
                     $classes = array();
                     $dataProperties = array();
@@ -98,6 +98,7 @@
                     <button type="submit" class="btn btn-primary">Создать параметр</button>
                 </form>
             </div>
+            <a href="/scrap.php" class="btn btn-success">Загрузить данные о героях</a>
         </div>
     </div>
     <!-- Include Bootstrap JS -->

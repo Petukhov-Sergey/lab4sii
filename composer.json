@@ -12,6 +12,10 @@
         }
     ],
     "require": {
-        "ext-simplexml": "*"
+        "ext-simplexml": "*",
+        "sunra/php-simple-html-dom-parser": "^1.5",
+        "ext-dom": "*",
+        "ext-curl": "*",
+        "fabpot/goutte": "^4.0"
     }
 }
